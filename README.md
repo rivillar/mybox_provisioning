@@ -9,6 +9,7 @@ When both VirtualBox and Vagrant are installed, you may now begin building a vir
 
 $ vagrant init rivillar/mybox --box-version 1.0 \
 $ vagrant up \
+
 To test if you are able to login please enter the command below: 
 
 $ vagrant ssh
@@ -23,13 +24,13 @@ You now have a minimally installed virtual box.  You may now proceed with custom
 - a file called phpinfo.php 
 - a file called bootstrap.sh
 
-5. Please ensure that these 3 files are in your present working directory and ensure that your base directory (present working directory) has a 755 permission. \
+5. Please ensure that these 3 files are in your present working directory.  Your base directory (present working directory) and these 3 files should have 755 permission. 
 
-6. After putting them in place, we need to reload the newly-built virtual box. \
+6. After putting them in place, we need to reload the newly-built virtual box. 
 
 $ vagrant reload --provision
 
-7. Test if php and apache are working as required.  Access the default homepage from your host machine's browser. \
+7. Test if php and apache are working as required.  Access the default homepage from your host machine's browser. 
 
 enter the url http://localhost:8888/phpinfo.php or http://127.0.0.1:8888/phpinfo.php
 
