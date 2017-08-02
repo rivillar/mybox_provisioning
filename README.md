@@ -8,33 +8,27 @@ VirtualBox is also required to be present in your system before proceeding with 
 When both VirtualBox and Vagrant are installed, you may now begin building a virtual box. 
 
 $ vagrant init rivillar/mybox --box-version 1.0 \
+
+A new file call Vagrantfile will be created in your present working directory.  We need to replace this with the modified Vagrantfile provided.
+
+4. Copy the bootstrap.sh and phpinfo.php in your present working directory.  
+
+These files can be found in https://gist.github.com/rivillar/8f94a8b10de185eebfaf1dc1df42d380.
+
+Please ensure that these 3 files and your present working directory have 755 permission.
+
+Start up your system:
+
 $ vagrant up 
 
 To test if you are able to login please enter the command below: 
 
 $ vagrant ssh
 
-Once you are able to login, please exit and go back to your host machine.
+Once you are able to login, please exit and go back to your host machine.  
 
-You now have a minimally installed virtual box.  You may now proceed with customizing the newly-installed box. 
-
-4. We need to keep 3 important files to provision a successful box as per the requirement:
-
-- a new modified Vagrantfile 
-- a file called phpinfo.php 
-- a file called bootstrap.sh
-
-These files can be found in https://gist.github.com/rivillar/8f94a8b10de185eebfaf1dc1df42d380
-
-5. Please ensure that these 3 files are in your present working directory.  Your base directory (present working directory) and these 3 files should have 755 permission. 
-
-6. After putting them in place, we need to reload the newly-built virtual box. 
-
-$ vagrant reload --provision
-
-7. Test if php and apache are working as required.  Access the default homepage from your host machine's browser. 
+5. Test if php and apache are working as required.  Access the default homepage from your host machine's browser. 
 
 enter the url http://localhost:8888/phpinfo.php or http://127.0.0.1:8888/phpinfo.php
 
-At this point, you should be able to see the php homepage.
-
+At this point, you should be able to see the required homepage successfully. 
