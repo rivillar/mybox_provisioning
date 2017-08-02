@@ -7,7 +7,7 @@ VirtualBox is also required to be present in your host system before proceeding 
 3. Installing a base box thru Vagrant \
 When both VirtualBox and Vagrant are installed, you may now begin building a virtual box. 
 
-$ vagrant init rivillar/mybox --box-version 1.0 \
+$ vagrant init rivillar/mybox --box-version 1.0 
 
 A new file call Vagrantfile will be created in your present working directory.  We need to replace this with the modified Vagrantfile provided.
 
