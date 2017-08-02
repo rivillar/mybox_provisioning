@@ -9,7 +9,7 @@ When both VirtualBox and Vagrant are installed, you may now begin building a vir
 
 $ vagrant init rivillar/mybox --box-version 1.0 
 
-A new file call Vagrantfile will be created in your present working directory.  We need to replace this with the modified Vagrantfile provided.
+A new file called Vagrantfile will be created in your present working directory.  We need to replace this with the modified Vagrantfile provided.
 
 4. Copy the bootstrap.sh and phpinfo.php in your present working directory.  
 
