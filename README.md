@@ -8,7 +8,7 @@ VirtualBox is also required to be present in your system before proceeding with 
 When both VirtualBox and Vagrant are installed, you may now begin building a virtual box. 
 
 $ vagrant init rivillar/mybox --box-version 1.0 \
-$ vagrant up \
+$ vagrant up 
 
 To test if you are able to login please enter the command below: 
 
@@ -23,6 +23,8 @@ You now have a minimally installed virtual box.  You may now proceed with custom
 - a new modified Vagrantfile 
 - a file called phpinfo.php 
 - a file called bootstrap.sh
+
+These files can be found in https://gist.github.com/rivillar/8f94a8b10de185eebfaf1dc1df42d380
 
 5. Please ensure that these 3 files are in your present working directory.  Your base directory (present working directory) and these 3 files should have 755 permission. 
 
