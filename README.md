@@ -1,11 +1,11 @@
 # mybox_provisioning
-Placeholder for the required files when provisioning a virtual box thru Vagrant
+Placeholder for the required files when provisioning a virtual host thru Vagrant
 1. Installing Vagrant \
 To begin with the provisioning, you should first find the appropriate package for your host system and download it. 
 2. Installing VirtualBox \
 VirtualBox is also required to be present in your host system before proceeding with the provisioning proper.  Please download and install it.
 3. Installing a base box thru Vagrant \
-When both VirtualBox and Vagrant are installed, you may now begin building a virtual box. 
+When both VirtualBox and Vagrant are installed, you may now begin building a virtual host. 
 
 $ vagrant init rivillar/mybox --box-version 1.0 
 
