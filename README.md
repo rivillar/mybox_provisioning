@@ -11,7 +11,7 @@ $ vagrant init rivillar/mybox --box-version 1.0
 
 A new file called Vagrantfile will be created in your present working directory.  We need to replace this with the modified Vagrantfile provided.
 
-4. Copy the bootstrap.sh and phpinfo.php in your present working directory.  
+4. Copy the bootstrap.sh and phpinfo.php to your present working directory.  
 
 These files can be found in https://gist.github.com/rivillar/8f94a8b10de185eebfaf1dc1df42d380.
 
